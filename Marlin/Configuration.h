@@ -573,7 +573,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH (X_MAX_LENGTH+Y_MAX_LENGTH)
+#define EXTRUDE_MAXLENGTH (MY_X_MAX_LENGTH+MY_Y_MAX_LENGTH)
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -1140,9 +1140,9 @@
 #define Y_MAX_POS Y_BED_SIZE
 #define Z_MAX_POS 200
 
-#define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
-#define Y_MAX_LENGTH (Y_MAX_POS - Y_MIN_POS)
-#define Z_MAX_LENGTH (Z_MAX_POS - Z_MIN_POS)
+#define MY_X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
+#define MY_Y_MAX_LENGTH (Y_MAX_POS - Y_MIN_POS)
+#define MY_Z_MAX_LENGTH (Z_MAX_POS - Z_MIN_POS)
 
 /**
  * Software Endstops
